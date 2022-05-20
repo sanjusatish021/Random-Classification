@@ -25,6 +25,24 @@ A Random Forest is a meta estimator that fits a number of decision tree classifi
 4.Final output is considered based on Majority Voting or Averaging for Classification and regression respectively.
 
 
+## Program
+```
+/*
+Program to implement random classification.
+Developed by   : SANJU S
+RegisterNumber :  212219040137
+*/
+import matplotlib.pyplot as plt
+from sklearn import datasets
+X,y = datasets.make_blobs(n_samples=100,n_features=2,centers=2,cluster_std=1.05,random_state=2)
+fig=plt.figure(figsize=(10,8))
+plt.plot(X[:,0][y==0], X[:,1][y==0],'pc')
+plt.plot(X[:,0][y==1], X[:,1][y==1],'bo')
+plt.xlabel("Feature 1")
+plt.ylabel("FeaTure 2")
+plt.title("Random Classification Data with 2 classes")
+```
+
 
 ## Output
 ![download](https://user-images.githubusercontent.com/94214195/169483695-50d8d658-cf3e-493a-aae7-ecec5e925c83.png)
